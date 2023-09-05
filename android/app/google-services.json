@@ -1,0 +1,82 @@
+{
+  "project_info": {
+    "project_number": "986675450355",
+    "project_id": "rempte-config",
+    "storage_bucket": "rempte-config.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:986675450355:android:5d76894f393665510c4286",
+        "android_client_info": {
+          "package_name": "com.example.remote_config_example"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "986675450355-go67nsjv37kqo7vmjg9m6ooohkv3t1o9.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCD3gqb9KLjYjFrO80pFg_IwhhAdpXCLoE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "986675450355-go67nsjv37kqo7vmjg9m6ooohkv3t1o9.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "986675450355-im6ajj4oqu3g2dq581jb2u2vvkec6ae7.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.example.remoteConfigExample"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:986675450355:android:aedfc10cc8bd0bc90c4286",
+        "android_client_info": {
+          "package_name": "com.example.remote_config_firebase"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "986675450355-go67nsjv37kqo7vmjg9m6ooohkv3t1o9.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCD3gqb9KLjYjFrO80pFg_IwhhAdpXCLoE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "986675450355-go67nsjv37kqo7vmjg9m6ooohkv3t1o9.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "986675450355-im6ajj4oqu3g2dq581jb2u2vvkec6ae7.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.example.remoteConfigExample"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

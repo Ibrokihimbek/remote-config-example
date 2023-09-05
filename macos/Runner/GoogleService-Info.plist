@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CLIENT_ID</key>
+	<string>986675450355-r1gsh49kmlkt9pr5es5i5kebptdlnds4.apps.googleusercontent.com</string>
+	<key>REVERSED_CLIENT_ID</key>
+	<string>com.googleusercontent.apps.986675450355-r1gsh49kmlkt9pr5es5i5kebptdlnds4</string>
+	<key>API_KEY</key>
+	<string>AIzaSyA-ONQF2_u9qpUKo3xWwYAPh3aNaSWy9ZU</string>
+	<key>GCM_SENDER_ID</key>
+	<string>986675450355</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>com.example.remoteConfigFirebase.RunnerTests</string>
+	<key>PROJECT_ID</key>
+	<string>rempte-config</string>
+	<key>STORAGE_BUCKET</key>
+	<string>rempte-config.appspot.com</string>
+	<key>IS_ADS_ENABLED</key>
+	<false></false>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false></false>
+	<key>IS_APPINVITE_ENABLED</key>
+	<true></true>
+	<key>IS_GCM_ENABLED</key>
+	<true></true>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true></true>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:986675450355:ios:0767d58d3227ac440c4286</string>
+</dict>
+</plist>
