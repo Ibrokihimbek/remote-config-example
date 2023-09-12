@@ -1,7 +1,8 @@
+import 'dart:io';
+
 import 'package:firebase_remote_config/firebase_remote_config.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
-import 'package:remote_config_firebase/firebase/firebase_remote_config_service.dart';
 import 'package:remote_config_firebase/home_bloc/home_bloc.dart';
 
 class HomePage extends StatelessWidget {
@@ -10,16 +11,13 @@ class HomePage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return BlocProvider(
-      create: (context) =>
-          HomeBloc(
-              remoteConfig: FirebaseRemoteConfig.instance,
-
-          ),
+      create: (context) => HomeBloc(
+        remoteConfig: FirebaseRemoteConfig.instance,
+      ),
       child: const HomePageBody(),
     );
   }
 }
-
 
 class HomePageBody extends StatefulWidget {
   const HomePageBody({super.key});
@@ -29,7 +27,6 @@ class HomePageBody extends StatefulWidget {
 }
 
 class _HomePageBodyState extends State<HomePageBody> {
-
   @override
   void initState() {
     super.initState();
@@ -46,7 +43,7 @@ class _HomePageBodyState extends State<HomePageBody> {
       appBar: AppBar(title: const Text('Home Page')),
       body: BlocConsumer<HomeBloc, HomeState>(
         listener: (context, state) {
-          if (state.isValidAppVersion) {
+          if (state.isValidAppVersionAndroid || state.isValidAppVersionIos) {
             showDialog(
               context: context,
               builder: (context) => AlertDialog(
@@ -72,7 +69,20 @@ class _HomePageBodyState extends State<HomePageBody> {
                 width: 500,
                 height: 500,
                 child: Center(
-                  child: Text(state.appVersion, style: const TextStyle(fontSize: 24),),
+                  child: Column(
+                    children: [
+                      Text(
+                        'Current version ${state.appVersion}',
+                        style: const TextStyle(fontSize: 24),
+                      ),
+                      Text(
+                        Platform.isAndroid
+                            ? 'Android config ${state.configVersionAndroid}'
+                            : 'iOS config ${state.configVersionIos}',
+                        style: const TextStyle(fontSize: 24),
+                      ),
+                    ],
+                  ),
                 ),
               ),
             ),
